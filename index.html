@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>№1_Shop_KGZ — Free Fire алмаз салуу</title>
+  <meta name="description" content="Free Fire алмаз, ваучер, пропуск жана прокачка — арзан баада. MBank, O! Банк, Элдик Банк, Элкарт, Abank аркылуу төлөө.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <a href="#" class="logo">💎 <span>№1_Shop_KGZ</span></a>
+      <a class="top-phone" id="topPhone" href="#">📞 <span></span></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="tag">Free Fire · Кыргызстан</p>
+      <h1>Алмаз салуу — <em>арзан</em> жана <em>тез</em></h1>
+      <p class="lead">Алмаз, апталык/айлык ваучер, пропуск жана прокачка. ID'ңизди жазып, банк аркылуу төлөп, чекти WhatsApp'ка жөнөтүңүз — 5–15 мүнөттө түшөт.</p>
+      <a href="#shop" class="btn btn-big">Сатып алуу</a>
+      <ol class="steps">
+        <li><b>1</b> Пакет тандаңыз</li>
+        <li><b>2</b> Free Fire ID жазыңыз</li>
+        <li><b>3</b> Банк аркылуу төлөңүз</li>
+        <li><b>4</b> Чекти WhatsApp'ка жөнөтүңүз</li>
+      </ol>
+    </div>
+  </section>
+
+  <main class="wrap" id="shop">
+    <h2>💎 Алмаздар</h2>
+    <div class="grid" id="diamonds"></div>
+
+    <h2>🎟️ Ваучерлер · Пропуск · Прокачка</h2>
+    <div class="grid" id="extras"></div>
+
+    <section class="order" id="order">
+      <h2>🛒 Буйрутма</h2>
+      <div class="order-grid">
+        <form id="orderForm" class="card form" novalidate>
+          <div class="picked" id="picked">Пакет тандала элек — жогорудан тандаңыз</div>
+
+          <label>Free Fire ID <small>(оюндагы профилде)</small>
+            <input id="ffId" inputmode="numeric" pattern="[0-9]{5,13}" placeholder="мисалы: 123456789" required>
+          </label>
+          <label>Ник (милдеттүү эмес)
+            <input id="ffNick" maxlength="30" placeholder="оюндагы атыңыз">
+          </label>
+
+          <div class="lbl">Банк тандаңыз</div>
+          <div class="banks" id="banks"></div>
+
+          <p class="err" id="err"></p>
+          <button type="submit" class="btn btn-big btn-full">Төлөөгө өтүү →</button>
+        </form>
+
+        <div class="card pay" id="pay" hidden>
+          <h3>Төлөм</h3>
+          <div class="sum"><span>Төлөнө турган сумма</span><b id="paySum"></b></div>
+          <div class="bankbox" id="bankBox"></div>
+          <div class="qrwrap">
+            <img id="bankQr" alt="Банк QR" hidden>
+            <div id="waQr" class="waqr"></div>
+            <p class="qrcap" id="qrCap"></p>
+          </div>
+          <p class="note">Котормодо комментарийге буйрутма номерин жазыңыз: <b id="orderNo"></b></p>
+          <a class="btn btn-big btn-full btn-wa" id="waBtn" target="_blank" rel="noopener">✅ Төлөдүм — чекти WhatsApp'ка жөнөтүү</a>
+          <button class="link" id="backBtn" type="button">← Өзгөртүү</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>❓ Суроолор</h2>
+      <details><summary>Алмаз канча убакытта түшөт?</summary><p>Чекти алгандан кийин адатта 5–15 мүнөттө. Түнкүсүн бир аз кечигиши мүмкүн.</p></details>
+      <details><summary>Free Fire ID'ни кайдан табам?</summary><p>Оюнга кирип, сол жогорку бурчтагы профилиңизди басыңыз — ник астындагы сандар ошол ID.</p></details>
+      <details><summary>Аккаунтумдун паролу керекпи?</summary><p>Жок! Алмаз жана ваучер үчүн ID гана жетиштүү. Прокачка үчүн шарттарды WhatsApp'тан сүйлөшөбүз.</p></details>
+      <details><summary>Ката ID жазып алсам эмне болот?</summary><p>Дароо WhatsApp'ка жазыңыз — алмаз түшө электе оңдойбуз.</p></details>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p><b>№1_Shop_KGZ</b> · <a id="footPhone" href="#"></a> · <a id="footWa" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p class="muted">Көз карандысыз сатуучу. Garena же Free Fire'дын расмий дүкөнү эмес.</p>
+    </div>
+  </footer>
+
+  <a class="fab" id="fab" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+  <script src="qrcode.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
